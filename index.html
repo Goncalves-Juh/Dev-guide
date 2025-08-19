@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Desenvolvimento Web + Terminal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="header-title">📖 Guia de Desenvolvimento Web + Terminal</h1>
+            <button class="btn btn--primary terminal-toggle" id="terminal-toggle">
+                💻 Terminal
+            </button>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="container">
+            <div class="nav-menu">
+                <button class="nav-item active" data-section="all">📚 Todos</button>
+                <button class="nav-item" data-section="terminal">💻 Terminal</button>
+                <button class="nav-item" data-section="html">🏗️ HTML</button>
+                <button class="nav-item" data-section="css">🎨 CSS</button>
+                <button class="nav-item" data-section="javascript">🧠 JavaScript</button>
+                <button class="nav-item" data-section="recursos">🆓 Recursos</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Overview Section -->
+            <section id="all-section" class="content-section active">
+                <h2>📚 Guia Completo de Desenvolvimento Web</h2>
+                <p class="section-description">Referência com comandos, conceitos e recursos essenciais para desenvolvimento web moderno</p>
+                
+                <div class="overview-grid">
+                    <div class="overview-card" data-section="terminal">
+                        <div class="card-icon">💻</div>
+                        <h3>Terminal/CLI</h3>
+                        <p>Comandos essenciais para linha de comando</p>
+                        <span class="card-count">10 comandos</span>
+                    </div>
+                    
+                    <div class="overview-card" data-section="html">
+                        <div class="card-icon">🏗️</div>
+                        <h3>HTML</h3>
+                        <p>Estrutura de páginas web</p>
+                        <span class="card-count">10 elementos</span>
+                    </div>
+                    
+                    <div class="overview-card" data-section="css">
+                        <div class="card-icon">🎨</div>
+                        <h3>CSS</h3>
+                        <p>Estilização de páginas web</p>
+                        <span class="card-count">8 propriedades</span>
+                    </div>
+                    
+                    <div class="overview-card" data-section="javascript">
+                        <div class="card-icon">🧠</div>
+                        <h3>JavaScript</h3>
+                        <p>Funcionalidade e interatividade</p>
+                        <span class="card-count">8 exemplos</span>
+                    </div>
+                    
+                    <div class="overview-card" data-section="recursos">
+                        <div class="card-icon">🆓</div>
+                        <h3>Recursos Gratuitos</h3>
+                        <p>Ferramentas e recursos para desenvolvimento</p>
+                        <span class="card-count">6 recursos</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Terminal Commands Section -->
+            <section id="terminal-section" class="content-section">
+                <h2>💻 Terminal/CLI</h2>
+                <p class="section-description">Comandos essenciais para linha de comando</p>
+                
+                <div class="command-grid">
+                    <div class="command-item">
+                        <code class="command-code">ls</code>
+                        <span class="command-desc">listar arquivos e pastas</span>
+                        <button class="test-btn" data-command="ls">💻 Testar</button>
+                    </div>
+                    <div class="command-item">
+                        <code class="command-code">pwd</code>
+                        <span class="command-desc">mostrar diretório atual</span>
+                        <button class="test-btn" data-command="pwd">💻 Testar</button>
+                    </div>
+                    <div class="command-item">
+                        <code class="command-code">echo Hello World</code>
+                        <span class="command-desc">imprimir texto na tela</span>
+                        <button class="test-btn" data-command="echo Hello World">💻 Testar</button>
+                    </div>
+                    <div class="command-item">
+                        <code class="command-code">clear</code>
+                        <span class="command-desc">limpar a tela do terminal</span>
+                        <button class="test-btn" data-command="clear">💻 Testar</button>
+                    </div>
+                    <div class="command-item">
+                        <code class="command-code">date</code>
+                        <span class="command-desc">mostrar data e hora atual</span>
+                        <button class="test-btn" data-command="date">💻 Testar</button>
+                    </div>
+                    <div class="command-item">
+                        <code class="command-code">whoami</code>
+                        <span class="command-desc">mostrar usuário atual</span>
+                        <button class="test-btn" data-command="whoami">💻 Testar</button>
+                    </div>
+                    <div class="command-item">
+                        <code class="command-code">help</code>
+                        <span class="command-desc">mostrar comandos disponíveis</span>
+                        <button class="test-btn" data-command="help">💻 Testar</button>
+                    </div>
+                    <div class="command-item">
+                        <code class="command-code">js console.log('Hello')</code>
+                        <span class="command-desc">executar código JavaScript</span>
+                        <button class="test-btn" data-command="js console.log('Hello')">💻 Testar</button>
+                    </div>
+                    <div class="command-item">
+                        <code class="command-code">calc 2 + 2</code>
+                        <span class="command-desc">calculadora matemática</span>
+                        <button class="test-btn" data-command="calc 2 + 2">💻 Testar</button>
+                    </div>
+                    <div class="command-item">
+                        <code class="command-code">cd projeto</code>
+                        <span class="command-desc">navegar para diretório</span>
+                        <button class="test-btn" data-command="cd projeto">💻 Testar</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- HTML Section -->
+            <section id="html-section" class="content-section">
+                <h2>🏗️ HTML</h2>
+                <p class="section-description">Estrutura de páginas web</p>
+                
+                <div class="tags-grid">
+                    <div class="tag-item">
+                        <code class="tag-code">&lt;!DOCTYPE html&gt;</code>
+                        <span class="tag-desc">declaração do tipo de documento</span>
+                    </div>
+                    <div class="tag-item">
+                        <code class="tag-code">&lt;html&gt;</code>
+                        <span class="tag-desc">elemento raiz da página</span>
+                    </div>
+                    <div class="tag-item">
+                        <code class="tag-code">&lt;head&gt;</code>
+                        <span class="tag-desc">metadados da página</span>
+                    </div>
+                    <div class="tag-item">
+                        <code class="tag-code">&lt;title&gt;</code>
+                        <span class="tag-desc">título da página</span>
+                    </div>
+                    <div class="tag-item">
+                        <code class="tag-code">&lt;body&gt;</code>
+                        <span class="tag-desc">conteúdo visível da página</span>
+                    </div>
+                    <div class="tag-item">
+                        <code class="tag-code">&lt;h1&gt;</code>
+                        <span class="tag-desc">cabeçalho principal</span>
+                    </div>
+                    <div class="tag-item">
+                        <code class="tag-code">&lt;p&gt;</code>
+                        <span class="tag-desc">parágrafo de texto</span>
+                    </div>
+                    <div class="tag-item">
+                        <code class="tag-code">&lt;div&gt;</code>
+                        <span class="tag-desc">container genérico</span>
+                    </div>
+                    <div class="tag-item">
+                        <code class="tag-code">&lt;span&gt;</code>
+                        <span class="tag-desc">elemento inline genérico</span>
+                    </div>
+                    <div class="tag-item">
+                        <code class="tag-code">&lt;a href=""&gt;</code>
+                        <span class="tag-desc">link para outra página</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CSS Section -->
+            <section id="css-section" class="content-section">
+                <h2>🎨 CSS</h2>
+                <p class="section-description">Estilização de páginas web</p>
+                
+                <div class="properties-grid">
+                    <div class="property-item">
+                        <code class="property-code">color</code>
+                        <span class="property-desc">cor do texto</span>
+                        <code class="property-example">color: blue;</code>
+                    </div>
+                    <div class="property-item">
+                        <code class="property-code">background-color</code>
+                        <span class="property-desc">cor de fundo</span>
+                        <code class="property-example">background-color: #f0f0f0;</code>
+                    </div>
+                    <div class="property-item">
+                        <code class="property-code">font-size</code>
+                        <span class="property-desc">tamanho da fonte</span>
+                        <code class="property-example">font-size: 16px;</code>
+                    </div>
+                    <div class="property-item">
+                        <code class="property-code">padding</code>
+                        <span class="property-desc">espaçamento interno</span>
+                        <code class="property-example">padding: 10px;</code>
+                    </div>
+                    <div class="property-item">
+                        <code class="property-code">margin</code>
+                        <span class="property-desc">espaçamento externo</span>
+                        <code class="property-example">margin: 20px;</code>
+                    </div>
+                    <div class="property-item">
+                        <code class="property-code">display</code>
+                        <span class="property-desc">tipo de exibição</span>
+                        <code class="property-example">display: flex;</code>
+                    </div>
+                    <div class="property-item">
+                        <code class="property-code">width</code>
+                        <span class="property-desc">largura do elemento</span>
+                        <code class="property-example">width: 100%;</code>
+                    </div>
+                    <div class="property-item">
+                        <code class="property-code">height</code>
+                        <span class="property-desc">altura do elemento</span>
+                        <code class="property-example">height: 50px;</code>
+                    </div>
+                </div>
+            </section>
+
+            <!-- JavaScript Section -->
+            <section id="javascript-section" class="content-section">
+                <h2>🧠 JavaScript</h2>
+                <p class="section-description">Funcionalidade e interatividade</p>
+                
+                <div class="examples-grid">
+                    <div class="example-item">
+                        <code class="example-code">console.log('Hello World')</code>
+                        <span class="example-desc">imprimir no console</span>
+                        <button class="test-btn" data-command="js console.log('Hello World')">💻 Testar</button>
+                    </div>
+                    <div class="example-item">
+                        <code class="example-code">let x = 10; console.log(x)</code>
+                        <span class="example-desc">declarar variável</span>
+                        <button class="test-btn" data-command="js let x = 10; console.log(x)">💻 Testar</button>
+                    </div>
+                    <div class="example-item">
+                        <code class="example-code">Math.random()</code>
+                        <span class="example-desc">número aleatório</span>
+                        <button class="test-btn" data-command="js Math.random()">💻 Testar</button>
+                    </div>
+                    <div class="example-item">
+                        <code class="example-code">new Date().toLocaleString()</code>
+                        <span class="example-desc">data atual</span>
+                        <button class="test-btn" data-command="js new Date().toLocaleString()">💻 Testar</button>
+                    </div>
+                    <div class="example-item">
+                        <code class="example-code">[1,2,3].map(x => x * 2)</code>
+                        <span class="example-desc">mapear array</span>
+                        <button class="test-btn" data-command="js [1,2,3].map(x => x * 2)">💻 Testar</button>
+                    </div>
+                    <div class="example-item">
+                        <code class="example-code">'hello'.toUpperCase()</code>
+                        <span class="example-desc">texto maiúsculo</span>
+                        <button class="test-btn" data-command="js 'hello'.toUpperCase()">💻 Testar</button>
+                    </div>
+                    <div class="example-item">
+                        <code class="example-code">2 + 2 * 3</code>
+                        <span class="example-desc">operações matemáticas</span>
+                        <button class="test-btn" data-command="js 2 + 2 * 3">💻 Testar</button>
+                    </div>
+                    <div class="example-item">
+                        <code class="example-code">JSON.stringify({nome: 'João'})</code>
+                        <span class="example-desc">objeto para JSON</span>
+                        <button class="test-btn" data-command="js JSON.stringify({nome: 'João'})">💻 Testar</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Resources Section -->
+            <section id="recursos-section" class="content-section">
+                <h2>🆓 Recursos Gratuitos</h2>
+                <p class="section-description">Ferramentas e recursos para desenvolvimento</p>
+                
+                <div class="resources-grid">
+                    <div class="resource-item">
+                        <div class="resource-info">
+                            <div class="resource-name">MDN Web Docs</div>
+                            <div class="resource-url">https://developer.mozilla.org</div>
+                            <div class="resource-desc">Documentação web completa</div>
+                        </div>
+                        <button class="link-btn" onclick="window.open('https://developer.mozilla.org', '_blank')">🔗</button>
+                    </div>
+                    <div class="resource-item">
+                        <div class="resource-info">
+                            <div class="resource-name">W3Schools</div>
+                            <div class="resource-url">https://www.w3schools.com</div>
+                            <div class="resource-desc">Tutoriais e referências</div>
+                        </div>
+                        <button class="link-btn" onclick="window.open('https://www.w3schools.com', '_blank')">🔗</button>
+                    </div>
+                    <div class="resource-item">
+                        <div class="resource-info">
+                            <div class="resource-name">GitHub</div>
+                            <div class="resource-url">https://github.com</div>
+                            <div class="resource-desc">Repositórios de código</div>
+                        </div>
+                        <button class="link-btn" onclick="window.open('https://github.com', '_blank')">🔗</button>
+                    </div>
+                    <div class="resource-item">
+                        <div class="resource-info">
+                            <div class="resource-name">CodePen</div>
+                            <div class="resource-url">https://codepen.io</div>
+                            <div class="resource-desc">Editor online de código</div>
+                        </div>
+                        <button class="link-btn" onclick="window.open('https://codepen.io', '_blank')">🔗</button>
+                    </div>
+                    <div class="resource-item">
+                        <div class="resource-info">
+                            <div class="resource-name">JSFiddle</div>
+                            <div class="resource-url">https://jsfiddle.net</div>
+                            <div class="resource-desc">Testador de JavaScript</div>
+                        </div>
+                        <button class="link-btn" onclick="window.open('https://jsfiddle.net', '_blank')">🔗</button>
+                    </div>
+                    <div class="resource-item">
+                        <div class="resource-info">
+                            <div class="resource-name">Can I Use</div>
+                            <div class="resource-url">https://caniuse.com</div>
+                            <div class="resource-desc">Compatibilidade de navegadores</div>
+                        </div>
+                        <button class="link-btn" onclick="window.open('https://caniuse.com', '_blank')">🔗</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Terminal Interface -->
+    <div class="terminal-container hidden" id="terminal-container">
+        <div class="terminal-header">
+            <div class="terminal-title">
+                💻 Dev Guide Terminal
+            </div>
+            <div class="terminal-controls">
+                <button class="terminal-btn close-btn">×</button>
+            </div>
+        </div>
+        
+        <div class="terminal-content">
+            <div class="terminal-output" id="terminal-output">
+                <div class="terminal-line">
+                    <span class="terminal-welcome">🚀 Bem-vindo ao Dev Guide Terminal!</span>
+                </div>
+                <div class="terminal-line">
+                    <span class="terminal-info">Digite 'help' para ver os comandos disponíveis</span>
+                </div>
+                <div class="terminal-line">
+                    <span class="terminal-info">Use 'js &lt;código&gt;' para executar JavaScript</span>
+                </div>
+            </div>
+            
+            <div class="terminal-input-line">
+                <span class="terminal-prompt">user@dev-guide:~$</span>
+                <input type="text" class="terminal-input" id="terminal-input" autocomplete="off" spellcheck="false" placeholder="Digite um comando...">
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div class="toast hidden" id="toast">
+        <span class="toast-message">Mensagem</span>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
