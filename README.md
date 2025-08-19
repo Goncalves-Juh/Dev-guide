@@ -275,13 +275,6 @@ Contribuições são bem-vindas! Para contribuir:
 
 Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
 
-## 👨‍💻 Autor
-
-**Dev Guide Team**
-- Website: [seu-website.com](https://seu-website.com)
-- GitHub: [@seu-usuario](https://github.com/seu-usuario)
-- LinkedIn: [seu-linkedin](https://linkedin.com/in/seu-linkedin)
-
 ## 🙏 Agradecimentos
 
 - [MDN Web Docs](https://developer.mozilla.org) - Referência técnica
